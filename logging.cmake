@@ -24,15 +24,15 @@
 #
 
 # Logging file.
-SET(LOGGING_FILENAME "${CMAKE_BINARY_DIR}/config.log")
+SET(LOGGING_FILENAME "${CMAKE_BINARY_DIR}/config.log" CACHE INTERNAL "")
 
 # Watched variables list.
 # All watched variables final value will be displayed in the logging file.
-SET(LOGGING_WATCHED_VARIABLES "")
+SET(LOGGING_WATCHED_VARIABLES "" CACHE INTERNAL "")
 
 # Watched targets list.
 # All watched target properties will be displayed in the logging file.
-SET(LOGGING_WATCHED_TARGETS "")
+SET(LOGGING_WATCHED_TARGETS "" CACHE INTERNAL "")
 
 # Watched targets properties list.
 SET(LOGGING_WATCHED_TARGETS_PROPERTIES
